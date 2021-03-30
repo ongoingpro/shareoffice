@@ -1,0 +1,96 @@
+body,
+html {
+  font-family: $primary-font;
+  color: $black;
+}
+
+.ovh {
+  overflow: hidden;
+}
+
+.mla {
+  margin-left: auto;
+}
+
+.mra {
+  margin-right: auto;
+}
+
+#p {
+  line-height: 32px;
+  font-weight: 400;
+  font-size: 14px;
+  color: $black;
+}
+
+.h1 {
+  font-size: 80px;
+}
+.h2 {
+  font-size: 60px;
+}
+.h3 {
+  font-size: 44px;
+}
+.h4 {
+  font-size: 28px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $primary-font;
+  color: $black;
+  &.narrow {
+    font-weight: 200;
+  }
+}
+
+p {
+  font-family: $secondary-font;
+  font-size: 14px;
+  color: $black;
+}
+
+.img-center {
+  display: block;
+  margin: 0 auto;
+}
+
+.img-responsive {
+  max-width: 100%;
+}
+
+// button - style start
+
+// button - style end
+
+input {
+  &.form-control {
+    height: 50px;
+    &:focus {
+      // box-shadow: 0px 0px 0px 6px rgba($primary,.2);
+      // border-color: $primary;
+    }
+  }
+}
+
+textarea{
+  &.form-control{
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+}
+svg {
+  &.icon {
+    width: 1em;
+    height: 1em;
+    display: block;
+  }
+  &.hidden {
+    display: none;
+  }
+}

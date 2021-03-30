@@ -1,0 +1,45 @@
+---
+layout: default
+icon:
+- name: eye-off
+- name: eye-on
+- name: logout
+- name: meeting-sapce
+- name: meeting-sapce-in
+- name: account
+- name: account-in
+- name: history
+- name: history-in
+- name: home
+- name: home-in
+- name: add-guest-in
+- name: add-guest
+- name: minus
+- name: plus
+- name: time
+- name: calendar
+- name: close
+- name: menu
+
+
+---
+
+
+
+<div class="container">
+
+  <div class="text-center p-5">
+    <xmp><svg class="icon"><use xlink:href="#____"></use></svg></xmp>
+  </div>
+  <div class="row">
+    {% for icon in page.icon %}
+    <div class="col-md-2 text-center mb-5">
+      <svg class="icon display-3 mb-2">
+        <use xlink:href="#{{icon.name}}"></use>
+      </svg>
+      <p class="text-center"></p>
+      <input type="text" value="{{icon.name}}" class="bg-transparent text-center border-0 form-control" onClick="this.select();">
+    </div>
+    {% endfor %}
+  </div>
+</div>

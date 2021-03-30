@@ -1,0 +1,166 @@
+.modal-dialog-regi-pop {
+  max-width: 650px;
+
+  .modal-content {
+    border-radius: 36px;
+    padding: 90px;
+
+    @include breakpoint-down(phone) {
+      border-radius: 6px;
+      padding: 20px;
+    }
+  }
+}
+
+.pop_up_head {
+  .title {
+    span {
+      font-size: 17px;
+      font-weight: 600;
+    }
+    h3 {
+      font-size: 32px;
+      font-weight: 600;
+      margin-top: 0;
+    }
+  }
+  p {
+    margin-bottom: 10px;
+  }
+}
+
+.otp_enter {
+  max-width: 310px;
+
+  .form-control {
+    border-radius: 0px;
+    border-color: #7070704f;
+    height: 64px;
+    background: transparent;
+    padding: 25px;
+    padding-left: 0;
+    padding-right: 0;
+    font-family: $secondary-font;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    border-radius: 16px;
+    font-weight: 700;
+    font-size: 23px;
+    color: #000;
+
+    @include transition(all 0.2s ease-in);
+
+    &:focus {
+      box-shadow: 0px 0px 0px 4px rgba($secondary, 0.3);
+      background-color: $white;
+      border-color: $secondary;
+    }
+  }
+}
+
+.btn {
+  &.full-round {
+    border-radius: 200px;
+    i {
+      margin-left: 15px;
+      position: relative;
+      top: 1px;
+    }
+  }
+}
+
+.otp_mob__n {
+  position: relative;
+  @include transition(all 0.2s ease-in);
+  border: 1px solid #fff;
+  margin-bottom: 0;
+  &:hover {
+    box-shadow: 0px 0px 0px 4px rgba($secondary, 0.3);
+    background-color: $white;
+    border-color: $secondary;
+
+    @include breakpoint-down(phone) {
+      box-shadow: 0px 0px 0px 0px rgba($secondary, 0.3);
+      background-color: $white;
+      border-color: transparent;
+    }
+  }
+  .form-control {
+    border-radius: 0px;
+    border-color: #7070704f;
+    height: 64px;
+    background: transparent;
+    padding: 25px;
+    font-family: $secondary-font;
+    font-size: 14px;
+    font-weight: 600;
+
+    @include transition(all 0.2s ease-in);
+
+    &:focus {
+      box-shadow: none;
+      border-color: #ced4da;
+    }
+  }
+
+  .btn.btn-green {
+    height: 64px;
+    border-radius: 0;
+    max-width: 137px;
+    padding-left: 30px;
+    padding-right: 30px;
+    background: #00aa2d;
+    border-color: #00aa2d;
+
+    @include breakpoint-down(phone) {
+      max-width: 100%;
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+
+  .co__code {
+    position: relative;
+    z-index: 9;
+    &:after,
+    &:before {
+      content: "";
+      position: absolute;
+      right: -17px;
+      width: 30px;
+      height: 11px;
+      background: #fff;
+    }
+    &:after {
+      top: 1px;
+    }
+    &:before {
+      bottom: 1px;
+    }
+    .form-control {
+      border-right: 0;
+      padding: 21px 23px;
+    }
+  }
+
+  .input-group-prepend {
+    @include breakpoint-down(phone) {
+      width: 100%;
+    }
+  }
+}
+
+.modal-header {
+  .close {
+    position: absolute;
+    top: 40px;
+    right: 40px;
+
+    @include breakpoint-down(phone) {
+      top: 20px;
+      right: 20px;
+      font-size: 18px;
+    }
+  }
+}

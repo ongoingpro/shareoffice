@@ -1,0 +1,207 @@
+---
+layout : dashboard
+title : Add Guest
+
+tab :
+ - id: name
+   name: 01
+   active: active
+ - id: name02
+   name: 02
+ - id: name03
+   name: 03
+ - id: name04
+   name: 04
+ - id: name05
+   name: 05
+
+time:
+  - slot : 10.00am - 10.30am
+  - slot : 10.30am - 11.00am
+    disable : deactive
+  - slot : 11:00am - 11:30am
+  - slot : 11:30am - 12:00pm
+    disable : deactive
+  - slot : 12:00pm - 12:30pm
+  - slot : 12:30pm - 01:00pm
+  - slot : 01:00pm - 01:30pm
+  - slot : 01:30pm - 02:00pm
+  - slot : 02:00pm - 02:30pm
+    disable : deactive
+  - slot : 02:30pm - 03:00pm
+    disable : deactive
+  - slot : 10.00am - 10.30am
+  - slot : 10.30am - 11.00am
+
+---
+
+<div class="align_wrapper">
+  <div class="aic__box">
+    <form action="#">
+
+
+      
+      <input class="form-check-input d-none" type="radio" name="inlineRadioOptions" id="officespace" value="option1">
+      <input class="form-check-input d-none" type="radio" name="inlineRadioOptions" id="meetingspace" value="option2">
+      <div class="row justify-content-center">
+        <div class="col-12 col-sm-12  ms-2 me-4 text-center mb-5"> Access area </div>
+        <div class="p-0 col-auto ms-3 ms-sm-0 mt-2 mt-sm-0">
+          <div class="label__check o"></div>
+          <label class="form-check-label bold office_label" for="officespace"> Office Space </label>
+        </div>
+        <div class="p-0 col-auto mt-2 mt-sm-0">
+          <div class="label__check m"></div>
+          <label class="form-check-label bold meeting_label" for="meetingspace"> Meeting Space </label>
+        </div>
+      </div>
+
+
+      <div class="meetingspace__wrap">
+        <div class="bg__gray mt-3">
+      
+      
+      
+          <div class="meeting__head d-flex flex-column flex-md-row flex-md-nowrap mx-auto pt-2 pb-5">
+            <div class="input-group">
+              <input class="form-control outline date__icon" placeholder="Choose Date" onfocus="(this.type='date')" id="date">
+            </div>
+            <div class="input-group mx-md-3 my-3 my-md-0">
+              <!-- <input class="form-control outline" placeholder="Choose Time Slot" onfocus="(this.type='time')" id="time"> -->
+              <select class="form-control outline time__slot__icon" aria-label="Default select example">
+                <option selected="">Select Time Slot</option>
+                <option value="1">10:00 am to 10:30 am</option>
+                <option value="2">10:30 am to 11:00 am</option>
+                <option value="3">11:00 am to 11:30 am</option>
+              </select>
+            </div>
+            <div class="btn btn-primary btn-lg"> Search </div>
+          </div>
+      
+      
+          <div class="row">
+            {% for i in (1..8) %}
+            <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+              <a href="add-guest-details.html" class="text-decoration-none">
+                <div class="card card__column align-items-center meeting__card mt-3 mt-lg-5">
+                  <div class="d-flex align-items-end  flex-row flex-lg-column">
+                    <div class="meeting_tb ms-3 mt-3 ms-lg-0 mt-lg-0"><img src="https://picsum.photos/seed/chair/96/96"
+                        alt="">
+                    </div>
+                    <div class="text-start text-lg-center px-3">
+                      <h6 class="mt-2"> Meeting room Name </h6>
+                      <p class="m-0 mb-lg-3"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                    </div>
+                  </div>
+                  <div class="tags__sec">
+                    <p> Available Time Slot </p>
+                    <ul>
+                      {% for time in page.time %}
+                      <li class="{{time.disable}}" data-bs-toggle="tooltip" data-bs-placement="top"
+                        title="Available {{time.slot}}"> {{time.slot}} </li>
+                      {% endfor %}
+                    </ul>
+                  </div>
+                  <p class="text-start mb-2 mt-1 w-100 px-3"> Seating Capacity : <b> 10 </b></p>
+                </div>
+              </a>
+            </div>
+            {% endfor %}
+      
+          </div>
+      
+        </div>
+      
+      </div>
+
+
+      <div class="officespace__wrap"> 
+      
+
+        <div class="row mt-5">
+          <h6 class="mb-3"> Enter your Guest Details : </h6>
+          <div class="col-sm-6 col-xxl-4 mb-3">
+            <input type="text" class="form-control outline" id="sample" placeholder="First Name *">
+          </div>
+          <div class="col-sm-6 col-xxl-4 mb-3">
+            <input type="text" class="form-control outline" id="sample" placeholder="Last Name *">
+          </div>
+          <div class="col-sm-6 col-xxl-4 mb-3">
+            <input type="text" class="form-control outline" id="sample" placeholder="Email Id *">
+          </div>
+          <div class="col-sm-6 col-xxl-4 mb-3">
+            <input type="text" class="form-control outline" id="sample" placeholder="Contact Number ">
+          </div>
+          <div class="col-sm-6 col-xxl-4 mb-3">
+            <input type="text" class="form-control outline" id="sample" placeholder="Company Name">
+          </div>
+          <div class="col-sm-6 col-xxl-4 mb-3">
+            <textarea class="form-control outline" rows="0" cols="0" placeholder="Remark"></textarea>
+          </div>
+        </div>
+
+
+        <div class="row">
+          <div class="col-12">
+        
+            <div class="mb-5">
+              <div class="row">
+                <div class="col-auto  ms-2"> <label for="inputPassword6" class="col-form-label">Number of Participants</label>
+                </div>
+                <div class="col-auto mt-2 mt-xl-0">
+                  <div class="product_quantity">
+                    <div class="inner row g-0 flex-nowrap">
+                      <input data-min="1" data-max="0" type="text" name="quantity" value="1">
+                      <div class="quantity-selectors">
+                        <div class="decrement-quantity" aria-label="Subtract one" data-direction="-1" disabled="disabled"> <svg
+                            class="icon">
+                            <use xlink:href="#minus"></use>
+                          </svg></div>
+                        <div class="increment-quantity" aria-label="Add one" data-direction="1"> <svg class="icon">
+                            <use xlink:href="#plus"></use>
+                          </svg></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        
+        </div>
+
+
+
+        <div class="row">
+          <div class="col">    
+        
+            <ul class="nav nav-tabs align-items-center tab__custom flex-nowrap" id="myTab" role="tablist">
+              <li class="me-4 ms-2"> Participants </li>
+              {% for tab in page.tab %}
+              <li class="nav-item" role="presentation">
+                <div class="nav-link {{tab.active}}" id="{{tab.id}}-tab" data-bs-toggle="tab" data-bs-target="#{{tab.id}}"
+                  role="tab" aria-controls="{{tab.id}}" aria-selected="true"> 0{{tab.name}} </div>
+              </li>
+              {% endfor %}
+            </ul>
+            <div class="tab-content tab__content__custom" id="myTabContent">
+              {% for tab in page.tab %}
+              <div class="tab-pane {{tab.active}}" id="{{tab.id}}" role="tabpanel" aria-labelledby="{{tab.id}}-tab"> {% include
+                gust-form.html%} </div>
+              {% endfor %}
+            </div>    
+        
+          </div>
+        </div>
+
+
+
+
+      
+      </div>
+      
+      
+    
+    
+    </form>
+  </div>
+</div>

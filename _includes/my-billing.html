@@ -1,0 +1,31 @@
+<h5> My Billing </h5>
+
+<div class="row mt-4 mb-3 mx-3 g-0 d-none d-md-flex">
+  <div class="col-md-2"> Status </div>
+  <div class="col-md-2"> Due </div>
+  <div class="col-md-5"> Description </div>
+  <div class="col-md-3"> Amount </div>
+</div>
+
+{% for i in (1..1) %}
+<div class="card__matrial mt-3 mb-2 py-3 px-3 ">
+  <div class="row mx-0 g-0 align-items-center">
+    <div class="col-md-2 mb-2 mb-md-0"> <span class="small d-md-none"> Status : </span> <div class="btn btn-round status pending py-1 px-3">  Pending </div> </div>
+    <div class="col-md-2 mb-2 mb-md-0"> <span class="small d-md-none"> Due : </span>  2021/01/31 </div>
+    <div class="col-md-5 mb-2 mb-md-0"> <span class="small d-md-none"> Description : </span> Feb monthly membership fee </div>
+    <div class="col-md-1 mb-4 mb-md-0"> <span class="small d-md-none"> Amount : </span> 3,650 </div>
+    <div class="col-md-2 text-md-end"> <div class="btn btn-primary px-2"> Pay Now </div> </div>
+  </div>
+</div> 
+{% endfor %}
+{% for i in (1..7) %}
+<div class="card__matrial mt-3 mb-2 py-3 px-3 ">
+  <div class="row mx-0 g-0 align-items-center">
+    <div class="col-md-2 mb-2 mb-md-0"> <span class="small d-md-none"> Status : </span> <div class="btn btn-round status paid py-1 px-3">  Paid </div> </div>
+    <div class="col-md-2 mb-2 mb-md-0"> <span class="small d-md-none"> Due : </span> 2021/01/31 </div>
+    <div class="col-md-5 mb-2 mb-md-0"> <span class="small d-md-none"> Description : </span> Feb monthly membership fee </div>
+    <div class="col-md-1 mb-2 mb-md-0"> <span class="small d-md-none"> Amount : </span> 3,650 </div>
+    <div class="col-md-2 text-md-end">  </div>
+  </div>
+</div> 
+{% endfor %}

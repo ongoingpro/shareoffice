@@ -1,0 +1,71 @@
+---
+layout : dashboard
+title : Meeting Space
+time:
+ - slot : 10.00am - 10.30am
+ - slot : 10.30am - 11.00am
+   disable : deactive
+ - slot : 11:00am - 11:30am
+ - slot : 11:30am - 12:00pm
+   disable : deactive
+ - slot : 12:00pm - 12:30pm
+ - slot : 12:30pm - 01:00pm
+ - slot : 01:00pm - 01:30pm
+ - slot : 01:30pm - 02:00pm
+ - slot : 02:00pm - 02:30pm
+   disable : deactive
+ - slot : 02:30pm - 03:00pm
+   disable : deactive
+ - slot : 10.00am - 10.30am
+ - slot : 10.30am - 11.00am
+ 
+
+---
+
+<div class="meeting__head d-flex flex-column flex-md-row flex-md-nowrap mx-auto">
+  <div class="input-group">
+    <input class="form-control outline date__icon" placeholder="Choose Date" onfocus="(this.type='date')" id="date">
+  </div>
+  <div class="input-group mx-md-3 my-3 my-md-0">
+    <!-- <input class="form-control outline" placeholder="Choose Time Slot" onfocus="(this.type='time')" id="time"> -->
+    <select class="form-control outline seat__icon" aria-label="Default select example">
+      <option selected>Seating Capacity</option>
+      <option value="1">10 Seat</option>
+      <option value="2">15 Seat</option>
+      <option value="3">20 Seat</option>
+    </select>
+
+    <!-- <input class="form-control outline seat__icon" placeholder="Seating Capacity" type="number"> -->
+
+  </div>
+  <div class="btn btn-primary btn-lg"> Search </div>
+</div>
+
+<div class="mob__gray">
+<div class="row">
+  {% for i in (1..14) %}
+  <div class="col-xxl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+    <a href="meeting-sapce-details.html" class="text-decoration-none">
+      <div class="card card__column align-items-center meeting__card mt-3 mt-lg-5">
+        <div class="d-flex align-items-end  flex-row flex-lg-column">
+          <div class="meeting_tb ms-3 mt-3 ms-lg-0 mt-lg-0"><img src="https://picsum.photos/seed/chair/96/96" alt=""></div>
+          <div class="text-start text-lg-center px-3">
+            <h6 class="mt-2"> Meeting room Name </h6> 
+            <p class="m-0 mb-lg-3"> Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+          </div>
+        </div>
+        <div class="tags__sec">
+          <p> Available Time Slot </p>
+          <ul>
+            {% for time in page.time %}
+            <li class="{{time.disable}}" data-bs-toggle="tooltip" data-bs-placement="top" title="Available {{time.slot}}"> {{time.slot}} </li>
+            {% endfor %}
+          </ul>
+        </div>  
+        <p class="text-start mb-2 mt-1 w-100 px-3"> Seating Capacity : <b> 10 </b></p>
+      </div>
+    </a>
+  </div>  
+  {% endfor %}
+</div> 
+</div>

@@ -1,0 +1,16 @@
+- name: Mobility
+  image: p-icon-08.png
+- name: Product Name 
+  image: p-icon-03.png
+- name: IT Products
+  image: p-icon-05.png
+- name: Drinking Water
+  image: p-icon-04.png
+- name: Kitchen and Household
+  image: p-icon-07.png
+- name: Digital Imaging
+  image: p-icon-06.png
+- name: Renewable Energy
+  image: p-icon-02.png
+- name: Digital Signage
+  image: p-icon-01.png

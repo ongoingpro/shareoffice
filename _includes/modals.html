@@ -1,0 +1,227 @@
+{% if page.url == "/dashboard.html" %}
+
+<!-- Modal -->
+<div class="modal fade" id="intromodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="intromodalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <svg class="icon md-close-icon" data-bs-dismiss="modal">
+                <use xlink:href="#close"></use>
+            </svg>
+            <div class="modal-body">
+                <div class="text-center p-3 p-lg-5">
+                    <img src="images/intromodal_banner.svg" alt="" class="mb-4 img-fluid">
+                    <div class="mb-3 avg-pop-w">
+                        <h4> Change Password </h4>
+                        <p> Lorem Ipsum is simply dummy text of the printing
+                            and typesetting industry. </p>
+
+                        <div class="d-flex flex-column flex-md-row justify-content-center mt-4">
+                            <div class="btn btn-primary mb-3 mb-md-0 me-md-3"> Change Password </div>
+                            <div class="btn btn-link" data-bs-dismiss="modal"> skip this time </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+{% endif %}
+
+
+
+<div class="modal fade" id="guest_details" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="intromodalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <svg class="icon md-close-icon" data-bs-dismiss="modal">
+                <use xlink:href="#close"></use>
+            </svg>
+            <div class="modal-body">
+                <!-- <div class="text-center p-3 p-lg-5">
+                    <img src="images/intromodal_banner.svg" alt="" class="mb-4 img-fluid">
+                    <div class="mb-3 avg-pop-w">
+                        <h4> Change Password </h4>
+                        <p> Lorem Ipsum is simply dummy text of the printing
+                            and typesetting industry. </p>
+
+                        <div class="d-flex flex-column flex-md-row justify-content-center mt-4">
+                            <div class="btn btn-primary mb-3 mb-md-0 me-md-3"> Change Password </div>
+                            <div class="btn btn-link" data-bs-dismiss="modal"> skip this time </div>
+                        </div>
+                    </div>
+                </div> -->
+
+                <h3 class="modal__head"> Number of Participants: <span class="bold"> 5 </span></h3>
+
+                <div class="row">
+                    {% for i in (1..4) %}
+                    <div class="col-lg-6">
+                        <div class="card flex-row px-3 p-4 mb-3">
+                            <div class="guest__icon__round me-3"> <i class="icomoon-account-active"></i> </div>
+                            <div>
+                                <div class="d-flex flex-column mb-2">
+                                    <p class="small m-0"> Name </p>
+                                    <p class="bold m-0"> Travis L. Hooper </p>
+                                </div>
+                                <div class="d-flex flex-column mb-2">
+                                    <p class="small m-0"> Email ID </p>
+                                    <p class="bold m-0"> travis.l@gmail.com </p>
+                                </div>
+                                <div class="d-flex flex-column mb-2">
+                                    <p class="small m-0"> Contact Number </p>
+                                    <p class="bold m-0"> +61 54215875 </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- add meeting space ( Guest ) -->
+
+
+<div class="modal fade" id="add_meeting__space__guest" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="intromodalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered  modal-xl">
+        <div class="modal-content">
+            <svg class="icon md-close-icon" data-bs-dismiss="modal">
+                <use xlink:href="#close"></use>
+            </svg>
+            <div class="modal-body p-5 pt-3"> 
+                <!-- <div class="text-center p-3 p-lg-5">
+                    <img src="images/intromodal_banner.svg" alt="" class="mb-4 img-fluid">
+                    <div class="mb-3 avg-pop-w">
+                        <h4> Change Password </h4>
+                        <p> Lorem Ipsum is simply dummy text of the printing
+                            and typesetting industry. </p>
+
+                        <div class="d-flex flex-column flex-md-row justify-content-center mt-4">
+                            <div class="btn btn-primary mb-3 mb-md-0 me-md-3"> Change Password </div>
+                            <div class="btn btn-link" data-bs-dismiss="modal"> skip this time </div>
+                        </div>
+                    </div>
+                </div> -->
+
+                <h3 class="modal__head"> Number of Participants: <span class="bold"> 5 </span></h3>
+
+               
+
+
+
+                
+ <div class="row align-items-md-end">
+    <div class="col-lg-6">
+      <img src="https://picsum.photos/seed/chair/400/300" alt="" class="mb-4 img-fluid sm__full__img005">
+      <div class="mb-4 meet__cont">
+        <h4> Meeting room Name </h4>
+        <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+      </div>
+ 
+      <ul class="meeting_list">
+       <li> Meeting rooms for up to 10 guests </li>
+       <li> High-speed internet access </li>
+       <li> Audio-visual Equipment </li>
+       <li> Breakout rooms </li>
+       <li> Dedicated meeting planners </li>
+       <li> Intelligent Lighting </li>
+       <li> Semi-outdoor coffee break areas at the Conference Centre courtyard </li>
+       <li> Group and Team Building Activities </li>
+       <li> Personalized Online Group </li>
+      </ul>
+ 
+    </div>
+    <div class="col-lg-6">
+      <div class="meet_booking">
+        <h5> Booking </h5>
+        <p class="mb-2"> Date : <b>20 - 05 - 2021 </b></p>
+        <p class="mb-2"> Seating Capacity : <b> 10 </b></p>
+        <p class="mb-2"> Select Time Slot : </p>
+ 
+        <ul class="check__listing mb-4">
+          <li>
+           <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+           <label for="vehicle1"> 9am - 10am </label><br>
+          </li>
+          <li>
+           <input type="checkbox" id="vehicle2" name="vehicle2" value="Bike">
+           <label for="vehicle2"> 9am - 10am </label><br>
+          </li>
+          <li>
+           <input type="checkbox" id="vehicle3" name="vehicle3" value="Bike" class="disable" disabled>
+           <label for="vehicle3"> 9am - 10am </label><br>
+          </li>
+          <li>
+           <input type="checkbox" id="vehicle4" name="vehicle4" value="Bike">
+           <label for="vehicle4"> 9am - 10am </label><br>
+          </li>
+          <li>
+           <input type="checkbox" id="vehicle5" name="vehicle5" value="Bike">
+           <label for="vehicle5"> 9am - 10am </label><br>
+          </li>
+          <li>
+           <input type="checkbox" id="vehicle6" name="vehicle6" value="Bike">
+           <label for="vehicle6"> 9am - 10am </label><br>
+          </li>
+          <li>
+           <input type="checkbox" id="vehicle7" name="vehicle7" value="Bike">
+           <label for="vehicle7"> 9am - 10am </label><br>
+          </li>
+          <li>
+           <input type="checkbox" id="vehicle8" name="vehicle8" value="Bike" class="disable" disabled>
+           <label for="vehicle8"> 9am - 10am </label><br>
+          </li>
+          <li>
+           <input type="checkbox" id="vehicle9" name="vehicle9" value="Bike">
+           <label for="vehicle9"> 9am - 10am </label><br>
+          </li>
+          <li>
+           <input type="checkbox" id="vehicle10" name="vehicle10" value="Bike">
+           <label for="vehicle10"> 9am - 10am </label><br>
+          </li>
+          <li>
+           <input type="checkbox" id="vehicle11" name="vehicle11" value="Bike">
+           <label for="vehicle11"> 9am - 10am </label><br>
+          </li>
+          <li>
+           <input type="checkbox" id="vehicle12" name="vehicle12" value="Bike">
+           <label for="vehicle12"> 9am - 10am </label><br>
+          </li>
+          <li>
+           <input type="checkbox" id="vehicle13" name="vehicle13" value="Bike" class="disable" disabled>
+           <label for="vehicle13"> 9am - 10am </label><br>
+          </li>
+          <li>
+           <input type="checkbox" id="vehicle14" name="vehicle14" value="Bike">
+           <label for="vehicle14"> 9am - 10am </label><br>
+          </li>
+          <li>
+           <input type="checkbox" id="vehicle15" name="vehicle15" value="Bike">
+           <label for="vehicle15"> 9am - 10am </label><br>
+          </li>
+        </ul>
+ 
+        <div class="btn btn-primary btn-lg"> Add Meeting Space </div>
+ 
+      </div>
+    </div>
+  </div>
+
+
+
+
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,12 @@
+{% for i in (1..7) %}
+<div class="card card__column p-4 mb-sm-3">
+    <div class="row flex-sm-nowrap border-bottom pb-3 mb-2 g-0"> 
+        <div class="col-auto bold me-5 mb-2 mb-sm-0"> <span class="gray"> Date : </span> 05  February  2020  </div>
+        <div class="col-auto bold"> <span class="gray"> Time : </span> 11:00 am to 12:00 pm  </div>
+    </div>
+    <div class="row g-0">
+        <div class="col-md-12 mb-2"> Number of Participants: <span class="bold"> 05 </span> <a  data-bs-toggle="modal" data-bs-target="#guest_details" class="btn btn-link"> Details </a></div>
+        <div class="col-md-12"> Meeting Room : <span class="bold"> Meeting room Name </span> </div>
+    </div>
+</div>
+{% endfor %}

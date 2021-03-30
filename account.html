@@ -1,0 +1,26 @@
+---
+layout : dashboard
+title : Account
+---
+
+<div class="d-flex flex-column flex-xl-row account__tab__cover">
+    <ul class="nav nav-pills flex-xl-column flex-nowrap account__tab justify-content-center justify-content-xl-start" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+            <div class="nav-link active px-3 px-sm-4 px-xl-0 py-3 py-xl-2 pe-xl-5" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+            role="tab" aria-controls="pills-home" aria-selected="true">Profile</div>
+        </li>
+        <li class="nav-item" role="presentation">
+            <div class="nav-link px-3 px-sm-4 px-xl-0 py-3 py-xl-2 pe-xl-5" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+            role="tab" aria-controls="pills-profile" aria-selected="false">My Billing</div>
+        </li>
+        <li class="nav-item" role="presentation">
+            <div class="nav-link px-3 px-sm-4 px-xl-0 py-3 py-xl-2 pe-xl-5" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+            role="tab" aria-controls="pills-contact" aria-selected="false">Change Password</div>
+        </li>
+    </ul>
+    <div class="tab-content account__tab_conent" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"> {% include profile.html %}  </div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"> {% include my-billing.html %} </div>
+        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"> {% include changepassword.html %} </div>
+    </div>
+</div>

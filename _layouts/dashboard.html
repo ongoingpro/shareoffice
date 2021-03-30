@@ -1,0 +1,121 @@
+---
+
+---
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  {% include headerlink.html %}
+</head>
+
+<body class="screen">
+
+
+  <nav class="dashboard__body d-flex navbar-expand-lg">
+
+    <div class="side_menu desktop collapse navbar-collapse" id="navbarTogglerDemo01">
+      <div class="sticky-top">
+        <div class="logo d-none d-lg-block"><a href="dashboard.html" class="tdn"> <img src="images/share-office.svg"
+              alt=""> </a></div>
+
+        <div class="d-lg-none m-close-btn" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+          aria-controls=" " aria-expanded="false" aria-label="Toggle navigation">
+          <svg class="icon">
+            <use xlink:href="#close"></use>
+          </svg>
+        </div>
+
+        <div class="user_cover_mobile d-lg-none flex-column">
+          <img src="images/user.jpg" alt="">
+          <h4 class="m-0 mt-2"> Arlene Z. Shaw </h4>
+        </div>
+
+
+        <ul class="menu_section">
+          <li>
+            <a href="dashboard.html" class="{% if page.url == '/dashboard.html' %} in {% endif%}">
+              <div class="menu-icon"> <i
+                  class="icomoon-home{% if page.url == '/dashboard.html' %}-active{% endif%}"></i>
+              </div>
+              <div class="nav-name"> Home </div>
+            </a>
+          </li>
+          <li>
+            <a href="add-guest.html">
+              <div class="menu-icon"> <i
+                  class="icomoon-addguest{% if page.url == '/add-guest.html' %}-active{% endif%}"></i> </div>
+              <div class="nav-name"> Add Guest </div>
+            </a>
+          </li>
+          <li>
+            <a href="history.html" class="{% if page.url == '/history.html' %} in {% endif%}">
+              <div class="menu-icon"> <i
+                  class="icomoon-history{% if page.url == '/history.html' %}-active{% endif%}"></i> </div>
+              <div class="nav-name"> History </div>
+            </a>
+          </li>
+          <li>
+            <a href="account.html" class="{% if page.url == '/account.html' %} in {% endif%}">
+              <div class="menu-icon"> <i
+                  class="icomoon-account{% if page.url == '/account.html' %}-active{% endif%}"></i> </div>
+              <div class="nav-name"> Account </div>
+            </a>
+          </li>
+          <li>
+            <a href="meeting-sapce.html" class="{% if page.url == '/meeting-sapce.html' %} in {% endif%}">
+              <div class="menu-icon"> <i
+                  class="icomoon-meeting{% if page.url == '/meeting-sapce.html' %}-active{% endif%}"></i> </div>
+              <div class="nav-name"> Meeting Space </div>
+            </a>
+          </li>
+          <li>
+            <a href="index.html">
+              <div class="menu-icon"> <i class="icomoon-logout"></i> </div>
+              <div class="nav-name"> Logout </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="dashboard_right_section">
+      <div class="container_dashboard_inner">
+        <div class="d-lg-none header-m-section">
+          <div class="d-flex justify-content-between">
+            <div class="logo"> <img src="images/share-office.svg" alt=""></div>
+            <div>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <svg class="icon">
+                  <use xlink:href="#menu"></use>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="user_head">
+          <div class="db__title pb-3 pb-lg-0">
+            {{page.title}}
+          </div>
+          <div class="user_cover">
+            <img src="images/user.jpg" alt="">
+            <h4> Arlene Z. Shaw </h4>
+          </div>
+        </div>
+        <div class="db__container position-relative align-items-center flex-auto">
+          {{ content }}
+        </div>
+        <div class="db__footer text-center text-lg-start"> Copyright © 2021 Share Office </div>
+      </div>
+    </div>
+  </nav>
+
+
+  {% include modals.html %}
+  {% include svg.html %}
+  {% include footerlink.html %}
+
+</body>
+
+</html>

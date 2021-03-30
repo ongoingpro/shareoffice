@@ -1,0 +1,60 @@
+---
+layout : default
+title: Enter OTP
+---
+
+<div class="container-fluid">
+    <div class="container">
+        {% include header.html %}
+        <div class="row full__cntainer_vh">
+            <div class="col-md-6 position-relative">
+                <div class="inner__banner__sec animate__animated animate__flash animate__infinite animate__slowerx2"
+                    style="background-image: url(images/forgotpassword_banner.png);"></div>
+                <div class="inner__banner__sec animate__animated animate__flash2 animate__infinite animate__slowerx3 position-absolute top-0 start-0"
+                    style="background-image: url(images/forgotpassword_banner-shape.png);"></div>
+                <div class="inner__banner__sec animate__animated animate__flash2 animate__infinite animate__slow position-absolute top-0 start-0"
+                    style="background-image: url(images/forgotpassword_banner-shape1.png);"></div>
+                <div class="inner__banner__sec animate__animated animate__flash2 animate__infinite animate__slowerx3 position-absolute top-0 start-0"
+                    style="background-image: url(images/forgotpassword_banner-shape2.png);"></div>
+            </div>
+            <div class="col-md-6 d-flex align-items-center">
+                <div class="account__cover">
+                    <h1 class="mb-3"> Enter OTP </h1>
+                    <p class="mb-3"> Please Type One Time Password Send to <b>xxxxxlid@doanim.com</b> </p>
+
+                    <form action="#">
+
+                        <div class="row otp_enter g-2 mb-3">
+                            <div class="col-3">
+                                <input type="number" class="form-control otp-input text-center" placeholder="" required=""
+                                    name="fr_1" pattern="\d*" maxlength="1" id="inputs1" onkeyup="return checkKey(1)">
+                            </div>
+                            <div class="col-3">
+                                <input type="number" class="form-control otp-input text-center" placeholder="" required=""
+                                    name="fr_2" pattern="\d*" maxlength="1" id="inputs2" onkeyup="return checkKey(2)">
+                            </div>
+                            <div class="col-3">
+                                <input type="number" class="form-control otp-input text-center" placeholder="" required=""
+                                    name="fr_3" pattern="\d*" maxlength="1" id="inputs3" onkeyup="return checkKey(3)">
+                            </div>
+                            <div class="col-3">
+                                <input type="number" class="form-control otp-input text-center" placeholder="" required=""
+                                    name="fr_4" pattern="\d*" maxlength="1" id="inputs4">
+                            </div>
+                        </div>
+
+
+
+                        <div class="d-grid">
+                            <a href="dashboard.html" class="d-grid tdn">
+                                <div class="btn btn-primary btn-lg"> Continue </div>
+                            </a>
+                        </div>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

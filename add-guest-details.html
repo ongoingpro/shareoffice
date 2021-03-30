@@ -1,0 +1,235 @@
+---
+layout : dashboard
+title : Meeting Space
+time:
+ - slot : 10.00am - 10.30am
+ - slot : 10.30am - 11.00am
+   disable : deactive
+ - slot : 11:00am - 11:30am
+ - slot : 11:30am - 12:00pm
+   disable : deactive
+ - slot : 12:00pm - 12:30pm
+ - slot : 12:30pm - 01:00pm
+ - slot : 01:00pm - 01:30pm
+ - slot : 01:30pm - 02:00pm
+ - slot : 02:00pm - 02:30pm
+   disable : deactive
+ - slot : 02:30pm - 03:00pm
+   disable : deactive
+ - slot : 10.00am - 10.30am
+ - slot : 10.30am - 11.00am
+ 
+
+tab :
+ - id: name
+   name: 01
+   active: active
+ - id: name02
+   name: 02
+ - id: name03
+   name: 03
+ - id: name04
+   name: 04
+ - id: name05
+   name: 05
+
+time:
+  - slot : 10.00am - 10.30am
+  - slot : 10.30am - 11.00am
+    disable : deactive
+  - slot : 11:00am - 11:30am
+  - slot : 11:30am - 12:00pm
+    disable : deactive
+  - slot : 12:00pm - 12:30pm
+  - slot : 12:30pm - 01:00pm
+  - slot : 01:00pm - 01:30pm
+  - slot : 01:30pm - 02:00pm
+  - slot : 02:00pm - 02:30pm
+    disable : deactive
+  - slot : 02:30pm - 03:00pm
+    disable : deactive
+  - slot : 10.00am - 10.30am
+  - slot : 10.30am - 11.00am
+
+---
+
+ 
+ <div class="row">
+   <div class="col-md-6">
+     <img src="https://picsum.photos/seed/chair/400/300" alt="" class="mb-4 img-fluid sm__full__img005">
+     <div class="mb-4 meet__cont">
+       <h4> Meeting room Name </h4>
+       <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+     </div>
+
+     <ul class="meeting_list">
+      <li> Meeting rooms for up to 10 guests </li>
+      <li> High-speed internet access </li>
+      <li> Audio-visual Equipment </li>
+      <li> Breakout rooms </li>
+      <li> Dedicated meeting planners </li>
+      <li> Intelligent Lighting </li>
+      <li> Semi-outdoor coffee break areas at the Conference Centre courtyard </li>
+      <li> Group and Team Building Activities </li>
+      <li> Personalized Online Group </li>
+     </ul>
+
+   </div>
+   <div class="col-md-6">
+     <div class="meet_booking mt-4">
+       <h5> Booking </h5>
+       <p class="mb-2"> Date : <b>20 - 05 - 2021 </b></p>
+       <p class="mb-2"> Seating Capacity : <b> 10 </b></p>
+       <p class="mb-2"> Select Time Slot : </p>
+
+       <ul class="check__listing mb-4">
+         <li>
+          <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+          <label for="vehicle1"> 9am - 10am </label><br>
+         </li>
+         <li>
+          <input type="checkbox" id="vehicle2" name="vehicle2" value="Bike">
+          <label for="vehicle2"> 9am - 10am </label><br>
+         </li>
+         <li>
+          <input type="checkbox" id="vehicle3" name="vehicle3" value="Bike" class="disable" disabled>
+          <label for="vehicle3"> 9am - 10am </label><br>
+         </li>
+         <li>
+          <input type="checkbox" id="vehicle4" name="vehicle4" value="Bike">
+          <label for="vehicle4"> 9am - 10am </label><br>
+         </li>
+         <li>
+          <input type="checkbox" id="vehicle5" name="vehicle5" value="Bike">
+          <label for="vehicle5"> 9am - 10am </label><br>
+         </li>
+         <li>
+          <input type="checkbox" id="vehicle6" name="vehicle6" value="Bike">
+          <label for="vehicle6"> 9am - 10am </label><br>
+         </li>
+         <li>
+          <input type="checkbox" id="vehicle7" name="vehicle7" value="Bike">
+          <label for="vehicle7"> 9am - 10am </label><br>
+         </li>
+         <li>
+          <input type="checkbox" id="vehicle8" name="vehicle8" value="Bike" class="disable" disabled>
+          <label for="vehicle8"> 9am - 10am </label><br>
+         </li>
+         <li>
+          <input type="checkbox" id="vehicle9" name="vehicle9" value="Bike">
+          <label for="vehicle9"> 9am - 10am </label><br>
+         </li>
+         <li>
+          <input type="checkbox" id="vehicle10" name="vehicle10" value="Bike">
+          <label for="vehicle10"> 9am - 10am </label><br>
+         </li>
+         <li>
+          <input type="checkbox" id="vehicle11" name="vehicle11" value="Bike">
+          <label for="vehicle11"> 9am - 10am </label><br>
+         </li>
+         <li>
+          <input type="checkbox" id="vehicle12" name="vehicle12" value="Bike">
+          <label for="vehicle12"> 9am - 10am </label><br>
+         </li>
+         <li>
+          <input type="checkbox" id="vehicle13" name="vehicle13" value="Bike" class="disable" disabled>
+          <label for="vehicle13"> 9am - 10am </label><br>
+         </li>
+         <li>
+          <input type="checkbox" id="vehicle14" name="vehicle14" value="Bike">
+          <label for="vehicle14"> 9am - 10am </label><br>
+         </li>
+         <li>
+          <input type="checkbox" id="vehicle15" name="vehicle15" value="Bike">
+          <label for="vehicle15"> 9am - 10am </label><br>
+         </li>
+       </ul>
+
+       <!-- <div class="btn btn-primary btn-lg"> Book Now </div> -->
+
+     
+
+    <div class="row mt-5">
+      <h6 class="mb-3"> Enter your Guest Details : </h6>
+      <div class="col-sm-6 col-xxl-6 mb-3">
+        <input type="text" class="form-control outline" id="sample" placeholder="First Name *">
+      </div>
+      <div class="col-sm-6 col-xxl-6 mb-3">
+        <input type="text" class="form-control outline" id="sample" placeholder="Last Name *">
+      </div>
+      <div class="col-sm-6 col-xxl-6 mb-3">
+        <input type="text" class="form-control outline" id="sample" placeholder="Email Id *">
+      </div>
+      <div class="col-sm-6 col-xxl-6 mb-3">
+        <input type="text" class="form-control outline" id="sample" placeholder="Contact Number ">
+      </div>
+      <div class="col-sm-6 col-xxl-6 mb-3">
+        <input type="text" class="form-control outline" id="sample" placeholder="Company Name">
+      </div>
+      <div class="col-sm-6 col-xxl-6 mb-3">
+        <textarea class="form-control outline" rows="0" cols="0" placeholder="Remark"></textarea>
+      </div>
+    </div>
+
+
+
+    <div class="row">
+      <div class="col-12">
+           
+        <div class="mb-5">
+          <div class="row">
+            <div class="col-auto  ms-2"> <label for="inputPassword6" class="col-form-label">Number of Participants</label>
+            </div>
+            <div class="col-auto mt-2 mt-xl-0">
+              <div class="product_quantity">
+                <div class="inner row g-0 flex-nowrap">
+                  <input data-min="1" data-max="0" type="text" name="quantity" value="1">
+                  <div class="quantity-selectors">
+                    <div class="decrement-quantity" aria-label="Subtract one" data-direction="-1" disabled="disabled"> <svg
+                        class="icon">
+                        <use xlink:href="#minus"></use>
+                      </svg></div>
+                    <div class="increment-quantity" aria-label="Add one" data-direction="1"> <svg class="icon">
+                        <use xlink:href="#plus"></use>
+                      </svg></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+    
+    <div class="row">
+      <div class="col">    
+    
+        <ul class="nav nav-tabs align-items-center tab__custom flex-nowrap" id="myTab" role="tablist">
+          <li class="me-4 ms-2"> Participants </li>
+          {% for tab in page.tab %}
+          <li class="nav-item" role="presentation">
+            <div class="nav-link {{tab.active}}" id="{{tab.id}}-tab" data-bs-toggle="tab" data-bs-target="#{{tab.id}}"
+              role="tab" aria-controls="{{tab.id}}" aria-selected="true"> 0{{tab.name}} </div>
+          </li>
+          {% endfor %}
+        </ul>
+        <div class="tab-content tab__content__custom" id="myTabContent">
+          {% for tab in page.tab %}
+          <div class="tab-pane {{tab.active}}" id="{{tab.id}}" role="tabpanel" aria-labelledby="{{tab.id}}-tab"> {% include
+            gust-form.html%} </div>
+          {% endfor %}
+        </div>    
+    
+      </div>
+    </div>
+
+    <button type="submit" class="btn btn-primary btn-lg mt-4"> Add Guest </button>
+
+
+
+
+</div>
+
+   </div>
+ </div>

@@ -1,0 +1,18 @@
+<div class="row mt-4">
+  {% for i in (1..5) %}
+  <div class="col-xl-6 gh__card__cover">  
+    <div class="card card__column p-4 mb-sm-3">
+      <div class="row flex-xxl-nowrap border-bottom pb-3 mb-2 g-0">
+        <div class="col-auto bold me-5 mb-2 mb-sm-0"> <span class="gray"> Date : </span> 05 February 2020 </div>
+        <div class="col-auto bold"> <span class="gray"> Time : </span> 11:00 am to 12:00 pm </div>
+      </div>
+      <div class="row g-0">
+        <div class="col-md-12 mb-2"> Guest Name : <span class="bold"> Guest Full Name </span> </div>
+        <div class="col-md-12 mb-2"> Access Area : <span class="bold"> Meeting Room </span> </div>
+        <div class="col-md-12 mb-2"> Meeting Room : <span class="bold"> Meeting room Name </span> </div>
+        <div class="col-md-12 mb-2"> Number of Participants: <span class="bold"> 05 </span> <a data-bs-toggle="modal" data-bs-target="#guest_details" class="btn btn-link"> Details </a> </div>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>
